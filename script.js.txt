@@ -1,0 +1,36 @@
+// Smooth scrolling for navigation
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        target.scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+// Simple canvas for specs art (placeholder for technical specs as art)
+function drawSpecs(canvasId, length) {
+    const canvas = document.getElementById(canvasId);
+    const ctx = canvas.getContext('2d');
+    ctx.font = '20px Playfair Display';
+    ctx.fillStyle = '#FFD700';
+    ctx.fillText(`Uzunluk: ${length}m`, 10, 50);
+    ctx.fillText('Malzeme: Ultra-Lüks', 10, 100);
+    ctx.fillText('Vizyon: Imperial', 10, 150);
+}
+
+drawSpecs('specs-canvas-80', 80);
+drawSpecs('specs-canvas-110', 110);
+drawSpecs('specs-canvas-140', 140);
+
+// Fade-in animation on scroll
+const sections = document.querySelectorAll('.products, .mega-projects, .about, .contact');
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.animationDelay = '0s';
+        }
+    });
+});
+sections.forEach(section => observer.observe(section));

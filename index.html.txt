@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GELUXYA - Imperial Luxury Yachts</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>GELUXYA</h1>
+            <p>Imperial Luxury Yachts</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Ana Sayfa</a></li>
+                <li><a href="#products">Ürünler</a></li>
+                <li><a href="#mega">Mega Projeler</a></li>
+                <li><a href="#about">Hakkında</a></li>
+                <li><a href="#contact">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Biz, Seçkinlerin Denizlerini Fethetmek İçin Tasarlarız</h2>
+            <p>Ultra-lüks deniz yatları, imparatorluk seviyesinde asaletle.</p>
+            <img src="https://via.placeholder.com/1920x1080/000000/FFFFFF?text=GELUXYA+Imperial+Yacht+Render" alt="Imperial Yacht Render" class="hero-image">
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <h2>Ürünlerimiz</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="https://via.placeholder.com/600x400/000000/FFFFFF?text=3-11m+Fiberglas+Tekne" alt="Fiberglas Tekne">
+                <h3>Orta Grup Fiberglas Deniz Gezi Tekneleri</h3>
+                <p>3 metre ile 11 metre arası, özgürlük ve lüksün birleşimi.</p>
+                <div class="specs">
+                    <div class="spec-item">
+                        <span class="icon">⚓</span>
+                        <p>Uzunluk: 3-11m</p>
+                    </div>
+                    <div class="spec-item">
+                        <span class="icon">🌊</span>
+                        <p>Malzeme: Fiberglas</p>
+                    </div>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="https://via.placeholder.com/600x400/000000/FFFFFF?text=15m+Flybridge+Motoryat" alt="Flybridge Motoryat">
+                <h3>15 Metre Flybridge Serisi Motoryatlar</h3>
+                <p>Orta segmentte, imparatorluk gibi hakimiyet.</p>
+                <div class="specs">
+                    <div class="spec-item">
+                        <span class="icon">🏛️</span>
+                        <p>Uzunluk: 15m</p>
+                    </div>
+                    <div class="spec-item">
+                        <span class="icon">⚡</span>
+                        <p>Tür: Flybridge</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="mega" class="mega-projects">
+        <h2>Mega Projeler</h2>
+        <div class="mega-grid">
+            <div class="mega-item">
+                <img src="https://via.placeholder.com/800x600/000000/FFFFFF?text=80m+Mega+Yacht" alt="80m Mega Yacht">
+                <h3>80 Metre Mega Yat</h3>
+                <p>Denizlerin imparatoru, sonsuz lüks.</p>
+                <div class="specs-art">
+                    <canvas id="specs-canvas-80" width="400" height="200"></canvas>
+                </div>
+            </div>
+            <div class="mega-item">
+                <img src="https://via.placeholder.com/800x600/000000/FFFFFF?text=110m+Mega+Yacht" alt="110m Mega Yacht">
+                <h3>110 Metre Mega Yat</h3>
+                <p>Asaletin zirvesi, mesafeli ihtişam.</p>
+                <div class="specs-art">
+                    <canvas id="specs-canvas-110" width="400" height="200"></canvas>
+                </div>
+            </div>
+            <div class="mega-item">
+                <img src="https://via.placeholder.com/800x600/000000/FFFFFF?text=140m+Mega+Yacht" alt="140m Mega Yacht">
+                <h3>140 Metre Mega Yat</h3>
+                <p>Ultra-lüks, imparatorluk vizyonu.</p>
+                <div class="specs-art">
+                    <canvas id="specs-canvas-140" width="400" height="200"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>Hakkında</h2>
+        <p>GELUXYA, GEPES LTD ŞTI'nin bir markası olarak, deniz yatları üretiminde imparatorluk seviyesinde asaleti temsil eder. Biz, seçkinlerin denizlerini fethetmek için tasarlarız – mesafeli, ultra-lüks ve sonsuz özgürlük.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>İletişim</h2>
+        <p>Adres: Yalı Mahallesi İstanbul Caddesi Karasu Sanayi Sitesi GEPES LTD STI Karasu SAKARYA</p>
+        <p>GSM: 0535 407 7919</p>
+        <p>Mail: info@geluxya.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 GELUXYA - Imperial Luxury Yachts. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
